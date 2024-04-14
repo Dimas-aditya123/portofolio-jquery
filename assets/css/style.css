@@ -1,0 +1,470 @@
+/* style.css */
+body {
+    background-color: #121212;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #C8C8C8;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a[href="#Home"] {
+    font-weight: bold;
+    color: #A9E529;
+}
+
+div a img {
+    width: 30;
+    height: 30;
+    margin-right: 10px;
+}
+
+
+
+/* Hero Section*/
+.hero-section {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Mengubah posisi elemen menjadi lebih atas */
+    padding: 60px;
+    min-height: 100vh; /* Menetapkan ketinggian minimum agar selalu mencakup seluruh viewport */
+}
+
+.text-content {
+    width: 50%;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px; /* Menambahkan margin atas agar naik di atas */
+}
+
+.text-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-content {
+    width: 50%;
+    text-align: center;
+    margin-top: -10px; /* Menambahkan margin atas agar naik di atas */
+}
+
+.image-content img {
+    width: 580px;
+    height: 600px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.image-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+button {
+    background: linear-gradient(to right, #0C7917, #0C7917); /* Memperbaiki nilai warna */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px; /* Menambahkan margin atas agar naik di atas */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/*About Me*/
+.about-me h1 {
+    color: #A9E529;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-me p {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 50px; /* Jarak 50px dari judul "About Me" */
+    margin-right: 150px; /* Jarak 100px dari sisi kanan */
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: center; /* Menempatkan deskripsi di tengah */
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-left: 150px; /* Jarak gambar dari sisi kiri */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background: linear-gradient(to right, #A9E529, #32401f);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* Menempatkan tombol di sebelah kiri */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/*Skills*/
+.skills-section {
+    margin-top: 150px; /* Menggeser semua elemen ke bawah */
+}
+
+.skills-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 150px; /* Posisi judul "Skills" dari sisi kiri */
+    text-align: left; /* Menempatkan tulisan "Skills" di sisi kiri */
+}
+
+
+.skills-section div {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-section div img:first-child {
+    margin-right: auto; /* Tempatkan progress.png 100px dari sisi kiri */
+    margin-left: 150px; /* Posisi progress.png dari sisi kiri */
+}
+
+.skills-section div img:last-child {
+    margin-left: auto; /* Tempatkan logoapk.png 100px dari sisi kanan */
+    margin-right: 150px; /* Posisi logoapk.png dari sisi kanan */
+}
+
+.skills-section div img[src$="figma.png"] {
+    width: 100px;
+    height: 200px;
+}
+
+.skill-section div img[src$="canva.png"] {
+    width: 200px;
+    height: 323px;
+}
+
+/*Why Should you hire me*/
+/* style.css */
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Poppins Semibold */
+    font-size: 50px;
+    color: #ffffff; /* Warna untuk "Why should" */
+    margin-left: 150px; /* Jarak dari sisi kiri */
+    margin-top: 150px; /* Jarak dari atas */
+}
+
+.title span {
+    color: #A9E529; /* Warna untuk "you hire me?" */
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* Warna putih */
+    padding: 0 150px; /* Jarak 150px dari sisi kiri dan sisi kanan */
+    margin-top: 20px; /* Jarak antara title dan deskripsi */
+    line-height: 25px; /* Menetapkan tinggi baris */
+}
+
+/* Testimoni*/
+.testimonial-section h2,
+.testimonial-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Poppins Medium */
+    font-size: 40px;
+    color: #ffffff; /* Warna font putih */
+    text-align: center;
+    margin-top: 150px; /* Pindahkan ke bawah sejauh 100px */
+}
+
+.testimonial-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px; /* Pindahkan ke bawah sejauh 100px */
+}
+
+.testimonial-section .container > div {
+    text-align: center;
+    width: 30%;
+}
+
+.testimonial-section p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: Set width for the customer images */
+.testimonial-section .container img {
+    width: 100px;
+}
+
+.testimonial-section .rectangle {
+    width: 543px;
+    height: 310px;
+    border-radius: 30px;
+    background-color: #141414; /* Warna latar belakang */
+    padding: 20px; /* Padding untuk memberikan ruang di dalam kotak */
+    margin-right: 30px; /* Jarak antara kotak */
+    box-shadow: 0px 4px 6px rgba(169, 229, 41, 0.5); /* Efek bayangan */
+    margin-top: -10px; /* Pindahkan ke bawah sejauh 100px */
+}
+
+.testimonial-section .rectangle p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Poppins Medium */
+    font-size: 15px;
+    color: #ffffff; /* Warna teks putih */
+    margin-bottom: 30px; /* Jarak antara kutipan dengan elemen berikutnya */
+}
+
+.testimonial-section .rectangle img {
+    margin-bottom: 30px; /* Jarak antara foto dengan elemen berikutnya */
+}
+
+.testimonial-section .rectangle p.name {
+    font-weight: 600; /* Poppins Semibold */
+    margin-bottom: 30px; /* Jarak antara nama dengan elemen berikutnya */
+}
+
+/*Portofolio*/
+.portfolio-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 580; /* Poppins Semibold */
+    font-size: 60px;
+    color: #ffffff; /* Warna font putih */
+    text-align: center;
+}
+
+.portfolio-section img {
+    width: 450px; /* Lebar gambar */
+    height: 300px; /* Tinggi gambar */
+}
+
+.portfolio-section p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Poppins Semibold */
+    font-size: 28px;
+    color: #ffffff; /* Warna font putih */
+    text-align: center;
+}
+
+.portfolio-section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.portfolio-section .container > div {
+    text-align: center;
+    width: 30%;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #A7DA3B, #475627); /* Gradient linear */
+    border-top-left-radius: 50px; /* Lengkungan sudut kiri atas */
+    border-top-right-radius: 50px; /* Lengkungan sudut kanan atas */
+    padding: 20px; /* Padding untuk konten di dalam footer */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Membuat ruang kosong antara elemen */
+    align-items: center; /* Mengatur elemen vertikal ke tengah */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Poppins Semibold */
+    font-size: 30px;
+    color: #ffffff; /* Warna font putih */
+    margin: 0; /* Menghapus margin default */
+}
+
+button {
+    background-color: #A9E529;
+    color: #ffffff; /* Warna font putih */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen vertikal */
+}
+
+.logo img {
+    width: 100%; /* Mengisi lebar div dengan gambar */
+    max-width: 293px; /* Mengatur lebar maksimum gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.description {
+    margin-left: 100px; /* Jarak dari sisi kiri */
+    flex-grow: 1; /* Mengisi ruang tersisa di samping logo */
+}
+
+.description p {
+    font-family: 'Poppins', sans-serif;
+    text-align: left; /* Mengatur teks menjadi rata kiri */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, li {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal; /* Memastikan tidak ada penumpukan font tebal */
+    color: #ffffff;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+}
+
+/* Ganti ukuran semua logo media sosial menjadi 44x44px */
+.section-footer img {
+    width: 44px;
+    height: 44px;
+}
+
+/* Beri jarak antara logo-logo media sosial */
+.section-footer img {
+    margin-right: 35px;
+}
+
+/* Reset margin untuk elemen terakhir agar tidak ada margin di sebelah kanan */
+.section-footer img:last-child {
+    margin-right: 0;
+}
+
+/* CSS untuk membuat formulir sejajar */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(100% - 20px); /* Sesuaikan lebar input dengan formulir */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+/* Untuk tampilan responsif, misalnya pada layar kecil */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: calc(100% - 10px);
+    }
+  }
